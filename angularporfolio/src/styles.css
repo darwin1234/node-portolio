@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+body{padding:0; margin:0;}
+.head{padding:0; margin:0; width:98%; }
+.head nav ul{list-style:none; padding:0; margin:0;}
+.head nav ul li{float:left; padding:5px;}
+.head nav ul li a{text-decoration:none; color:#000;}
+
+
+.login{width:98%;  padding:5px;  overflow:auto;}
+.content{width:98%;   padding:5px; overflow:auto;}

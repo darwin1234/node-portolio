@@ -13,4 +13,9 @@ router.get('/posts', (req,res) =>{
 	});
 });
 
+router.get('/login', (req,res) => {
+	//console.log("Hello World!");
+	req.sendFile("HELLO WORLD!");
+});
+
 module.exports = router;
