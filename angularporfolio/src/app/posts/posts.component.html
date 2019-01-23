@@ -1,5 +1,5 @@
 <div class="content">
-<button class="btn btn-primary">Click</button>
+
 <div class="sidebar">
 		<div class="sidebaritem">
 		</div>
@@ -9,6 +9,11 @@
 		</div>
 </div>
 <div class="productswrap">
+<form>
+<label>Search:</label>
+<input type="text" name="search" value="" placeholder="search">
+<button class="btn btn-primary">Search</button>
+</form>
 
 	<div class="item" *ngFor="let post of posts">	
 		<h2>{{post.title}}</h2>
