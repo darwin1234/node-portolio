@@ -1,3 +1,15 @@
 <div class="login">
-  login works!
+ <form  id="loginfrm">
+	<div class="groupfields">
+	<label>Username: </label>
+	<input type="text" ngModel #username="ngModel" name="username" (change)="log(username)" placeholder="Username">
+	<div class="ds-error">Username Required!</div>
+	</div>
+	<div class="groupfields">
+	<label>Password: </label>
+	<input type="password"  ngModel #password="ngModel" name="password" (change)="log(password)" value="" placeholder="Password">
+	<div class="ds-error">Password Required!</div>
+	</div>
+	<input type="submit" value="Submit">
+ </form>
 </div>

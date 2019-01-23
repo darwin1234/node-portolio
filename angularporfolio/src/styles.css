@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body{padding:0; margin:0;}
-.head{padding:0; margin:0; width:98%; }
+.head{padding:0; margin:0; width:100%; }
+.head nav {width:100%; background:#ccc; overflow:auto;}
 .head nav ul{list-style:none; padding:0; margin:0;}
 .head nav ul li{float:left; padding:5px;}
 .head nav ul li a{text-decoration:none; color:#000;}
@@ -8,3 +9,17 @@ body{padding:0; margin:0;}
 
 .login{width:98%;  padding:5px;  overflow:auto;}
 .content{width:98%;   padding:5px; overflow:auto;}
+
+/** LOGIN **/
+.groupfields{width:100%; overflow:auto; clear:both;}
+.ds-error{background:red; color:#fff; width:100%; overflow:auto; clear:both; height:25px;}
+#loginfrm{width:400px; margin:0 auto;}
+#loginfrm input[type="text"],#loginfrm input[type="password"]{width: 99%; height: 25px; font-size: 12px;}
+#loginfrm input[type="submit"]{width: 200px; padding: 10px; float: right; background: green; color: #fff;}
+
+/**productswrap**/
+.sidebar{float:left; width:20%;}
+.sidebar .sidebaritem{height:250px; border:1px solid #ccc;}
+.productswrap{float:right; width:80%;}
+.productswrap .item{float:left; width:32%; padding:2px; margin:4px;}
+.addcart{color:#000; background:yellow; padding:4px; border-radius:2px; text-decoration:none; float:right;}

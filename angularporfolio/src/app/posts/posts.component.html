@@ -1,21 +1,19 @@
 <div class="content">
 <button class="btn btn-primary">Click</button>
+<div class="sidebar">
+		<div class="sidebaritem">
+		</div>
+		<div class="sidebaritem">
+		</div>
+		<div class="sidebaritem">
+		</div>
+</div>
+<div class="productswrap">
 
-<table>
-<thead>
-<tr>
-	<td>ID</td>
-	<td>Title</td>
-	<td>Body</td>
-</tr>	
-</thead>
-<tbody>
-	<tr *ngFor="let post of posts">
-	<td>{{post.id}}</td>
-	<td>{{post.title}}</td>
-	<td>{{post.body}}</td>
-	</tr>
-</tbody>
-
-</table>
+	<div class="item" *ngFor="let post of posts">	
+		<h2>{{post.title}}</h2>
+		<p>{{post.body}}</p>
+		<a class="addcart "href="#">Add to cart</a>
+	</div>
+</div>
 </div>

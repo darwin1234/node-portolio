@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { AdministratorComponent } from './administrator/administrator.component';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'; // <== add the imports!
 
 const Routes = [
     {
@@ -43,13 +44,15 @@ const Routes = [
 	HomeComponent,
     PostsComponent,
 	LoginComponent,
-	AdministratorComponent
+	AdministratorComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
 	RouterModule.forRoot(Routes),
-	HttpClientModule
+	HttpClientModule,
+	BrowserModule, 
+	FormsModule //<<<< and here
   ],
   providers: [],
   bootstrap: [AppComponent]
