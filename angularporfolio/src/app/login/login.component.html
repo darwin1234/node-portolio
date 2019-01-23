@@ -1,22 +1,18 @@
 <div class="login">
- <form  id="loginfrm">
-	<div class="groupfields">
-		
-		<label>Username: </label>
-		
-		<input type="text" ngModel #username="ngModel" name="username" (change)="log(username)" placeholder="Username">
-		
+   <form action="#" id="loginfrm">
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="email"  type="text" ngModel #username="ngModel" name="username" (change)="log(username)" placeholder="Username" class="form-control" id="email" >
 		<div class="ds-error" *ngIf="username.touched && !username.valid">Username Required!</div>
 		
 	</div>
-	<div class="groupfields">
-		
-		<label>Password: </label>
-		
-		<input type="password"  ngModel #password="ngModel" name="password" (change)="log(password)" value="" placeholder="Password">
-	
-		<div class="ds-error" *ngIf="password.touched && !password.valid">Password Required!</div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password"  ngModel #password="ngModel" name="password" (change)="log(password)" value="" placeholder="Password" class="form-control">
+	<div class="ds-error" *ngIf="password.touched && !password.valid">Password Required!</div>
 	</div>
-	<input type="submit" value="Submit">
- </form>
+  
+    <button type="submit" class="btn btn-default">Login</button>
+  </form>
+ 
 </div>
