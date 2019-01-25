@@ -9,7 +9,9 @@ import { LoginComponent } from './login/login.component';
 import { AdministratorComponent } from './administrator/administrator.component';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms'; // <== add the imports!
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RegisterComponent } from './register/register.component'; // <== add the imports!
+
 
 const Routes = [
     {
@@ -36,6 +38,11 @@ const Routes = [
 		path: 'administrator',
 		component: AdministratorComponent
 	}
+	,
+	{
+		path: 'register',
+		component: RegisterComponent
+	}
 ];
 
 @NgModule({
@@ -45,6 +52,7 @@ const Routes = [
     PostsComponent,
 	LoginComponent,
 	AdministratorComponent,
+	RegisterComponent,
   ],
   imports: [
     BrowserModule,

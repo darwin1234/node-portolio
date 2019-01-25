@@ -13,5 +13,7 @@ export class LoginComponent {
   log(x){
 	  console.log(x)
   }
-
+  login(){
+	  alert(1);
+  }
 }

@@ -18,4 +18,9 @@ router.get('/login', (req,res) => {
 	req.sendFile("HELLO WORLD!");
 });
 
+router.get('/register', (req,res) => {
+	//console.log("Hello World!");
+	req.sendFile("HELLO WORLD!");
+});
+
 module.exports = router;

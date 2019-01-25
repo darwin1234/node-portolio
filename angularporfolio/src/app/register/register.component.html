@@ -1,0 +1,23 @@
+<form #register="ngForm" (ngSubmit)="onSubmit(register)" id="register">
+	<h2>Registration</h2>
+    <div class="form-group">
+      <label for="email">Username:</label>
+      <input type="email" class="form-control" id="username" placeholder="Enter email" #username="ngModel" [(ngModel)]="employeeService.selectedEmployee.username" >
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="password" placeholder="Enter password" name="password" #password="ngModel" [(ngModel)]="employeeService.selectedEmployee.password">
+    </div>
+	
+	<div class="form-group">
+      <label for="Firstname">Firstname:</label>
+      <input type="text" class="form-control" id="firstname" placeholder="Enter firstname" name="firstname" #firstname="ngModel" [(ngModel)]="employeeService.selectedEmployee.firstname">
+    </div>
+	
+	<div class="form-group">
+      <label for="Lastname">Lastname:</label>
+      <input type="text" class="form-control" id="lastname" placeholder="Enter lastname" name="lastname" #lastname="ngModel" [(ngModel)]="employeeService.selectedEmployee.lastname">
+    </div>
+ 
+    <button type="submit" class="btn btn-default">Submit</button>
+ </form>
