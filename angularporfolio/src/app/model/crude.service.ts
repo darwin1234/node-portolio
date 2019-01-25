@@ -8,7 +8,7 @@ import { dsdata } from './dsdata.model';
 @Injectable()
 export class CrudeService 
 {
-	selectedEmployee: dsdata;
+	selectedDsdata: dsdata;
 	employees: dsdata[];
 	
 	readonly baseURL = 'http://localhost:3000/employees';

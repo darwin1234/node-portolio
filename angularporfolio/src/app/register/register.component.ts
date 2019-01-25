@@ -7,7 +7,8 @@ import { dsdata } from '../model/dsdata.model';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
-  styleUrls: ['./register.component.css']
+  styleUrls: ['./register.component.css'],
+  providers: [CrudeService]
 })
 export class RegisterComponent implements OnInit {
 

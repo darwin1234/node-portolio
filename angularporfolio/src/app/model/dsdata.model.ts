@@ -1,7 +1,7 @@
 export class dsdata {
     _id: string;
-    name: string;
-    position: string;
-    office: string;
-    salary: number;
+    firstname: string;
+    username: string;
+    lastname: string;
+    password: string;
 }
