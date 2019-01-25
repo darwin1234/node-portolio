@@ -3,6 +3,7 @@ import { NgForm } from '@angular/forms';
 import { CrudeService } from '../model/crude.service';
 import { dsdata } from '../model/dsdata.model';
 
+declare var M: any;
 
 @Component({
   selector: 'app-register',
@@ -16,6 +17,19 @@ export class RegisterComponent implements OnInit {
 
 
   ngOnInit() {
+	  this.resetForm();
+  }
+  
+  resetForm(form?: NgForm) {
+    if (form)
+      form.reset();
+    this.crudeService.selectedDsdata = {
+		 _id: "",
+		firstname: "",
+		username: "",
+		lastname: "",
+		password: ""
+    }
   }
   
   onSubmit(form: NgForm){
