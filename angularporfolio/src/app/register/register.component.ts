@@ -36,13 +36,13 @@ export class RegisterComponent implements OnInit {
 	  if (form.value._id == "") 
 	  {
 			this.crudeService.add(form.value).subscribe((res) => {
-			//this.resetForm(form);
-			//this.refreshEmployeeList();
+		   this.resetForm(form);
+				//this.refreshEmployeeList();
 			//M.toast({ html: 'Saved successfully', classes: 'rounded' });
 			});
-	}else {
+		}else {
       this.crudeService.edit(form.value).subscribe((res) => {
-        ///this.resetForm(form);
+			this.resetForm(form);
         //this.refreshEmployeeList();
         //M.toast({ html: 'Updated successfully', classes: 'rounded' });
       });

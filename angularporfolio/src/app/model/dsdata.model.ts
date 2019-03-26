@@ -1,7 +1,7 @@
 export class dsdata {
     _id: string;
+	username: string;
     firstname: string;
-    username: string;
-    lastname: string;
+	lastname: string;
     password: string;
 }

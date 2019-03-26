@@ -45,13 +45,10 @@
 
       
 
-        <div class="col-md-3 col-sm-6 mb-4" *ngFor="let post of posts">
-            <h2><a href="#">{{post.title}} </a></h2> 
-			<img src="https://cdn.iconscout.com/icon/free/png-256/shoes-100-161473.png">
-			<p>{{post.body}}</p>
-			<span><strong>PHP 200.00</strong></span>
-			<a class="addcart "href="#">Add to cart</a>
-        
+        <div class="col-md-3 col-sm-6 mb-4" *ngFor="let product of products">
+            <h4><a routerLink="/details/{{product._id}}" routerLinkActive="active">{{product.productname}} </a></h4> 
+			<p>{{product.productDescription}}</p>
+			<a href='#' class="btn btn-primary">Add to Cart</a>
         </div>
 
       </div>

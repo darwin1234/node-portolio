@@ -6,12 +6,18 @@ import 'rxjs/add/operator/map';
   providedIn: 'root'
 })
 export class PostsService {
-
+   readonly baseURL = 'http://localhost:3000/products';
   constructor(private http: HttpClient) { }
   
   getAllPosts(){
 	  return this.http.get('/routes/posts').map((posts)=>{
 		 return posts; 
+	  });
+  }
+  
+  ProductLists(){
+	   return this.http.get(this.baseURL).map((products)=>{
+		 return products; 
 	  });
   }
 }

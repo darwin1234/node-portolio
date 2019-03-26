@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { PostsComponent } from './posts/posts.component';
 import { LoginComponent } from './login/login.component';
 import { AdministratorComponent } from './administrator/administrator.component';
+import { DetailsComponent } from './details/details.component';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -42,6 +43,10 @@ const Routes = [
 	{
 		path: 'register',
 		component: RegisterComponent
+	},
+	{
+		path: 'details/:id',
+		component: DetailsComponent
 	}
 ];
 
@@ -53,6 +58,7 @@ const Routes = [
 	LoginComponent,
 	AdministratorComponent,
 	RegisterComponent,
+	DetailsComponent
   ],
   imports: [
     BrowserModule,

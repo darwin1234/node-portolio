@@ -1,8 +1,9 @@
 <form #register="ngForm" (ngSubmit)="onSubmit(register)" id="register">
 	<h2>Registration</h2>
+	 <input type="hidden" name="_id" #_id="ngModel" [(ngModel)]="crudeService.selectedDsdata._id">
     <div class="form-group">
       <label for="email">Username:</label>
-      <input type="email" class="form-control" id="username" placeholder="Enter email" name="username" #username="ngModel" [(ngModel)]="crudeService.selectedDsdata.username" >
+      <input type="email" class="form-control" id="username" placeholder="Enter Username" name="username" #username="ngModel" [(ngModel)]="crudeService.selectedDsdata.username" >
     </div>
     <div class="form-group">
       <label for="pwd">Password:</label>
@@ -19,5 +20,5 @@
       <input type="text" class="form-control" id="lastname" placeholder="Enter lastname" name="lastname" #lastname="ngModel" [(ngModel)]="crudeService.selectedDsdata.lastname">
     </div>
  
-    <button type="submit" class="btn btn-default">Submit</button>
+    <button type="submit" class="btn btn-primary">Submit</button>
  </form>
